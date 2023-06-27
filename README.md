@@ -57,6 +57,5 @@ Password (Jelszó): `123`
 <!-- MARKDOWN LINKS & IMAGES -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=logo=linkedin&colorB=0092cc
 [linkedin-url]: https://linkedin.com/in/gergo-almasi
-[product-screenshot]: images/screenshot.png
 [twitter-shield]: https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2F
 [twitter-url]: https://twitter.com/Skill4fun_
