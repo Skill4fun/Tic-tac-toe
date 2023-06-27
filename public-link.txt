@@ -1,1 +1,1 @@
-https://hmei-tictactoe.web.app/GameBoard
+https://hmei-tictactoe-app.web.app/
