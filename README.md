@@ -7,7 +7,7 @@ It's a simple Tic-Tac-Toe game app where two players can play against each other
 ## Used technology
 The App is built with **[React](https://reactjs.org/)** framework
 >
->Compared to JavaScript React provides better maintenance services  to keep the application fast and dynamic, it is easier to update the app or even expand with new features using reusable components and virtualDOM, which - makes in my opinion - React superior to plain JavaScript for today's modern applications.
+>Compared to JavaScript React provides better maintenance services  to keep the application fast and dynamic, it is easier to update the app or even expand with new features using reusable components and virtualDOM, which makes - in my opinion - React superior to plain JavaScript for today's modern applications.
 
 ## Displayed content
 Pages available to **Guest** visitors
