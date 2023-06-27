@@ -1,10 +1,32 @@
-# Getting Started with Create React App
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It's a simple Tic-Tac-Toe game app where two players can play against each other.
+
+## The App is built with React framework
+>**[React](https://reactjs.org/)**
+>
+>Compared to JavaScript React provides better maintenance services  to keep the application fast and dynamic, it is easier to update the app or even expand with new features using reusable components and virtualDOM, which makes React superior to plain JavaScript for today's modern applications.
+
+> * The game starts by generating a 10x10 square grid, initially empty.
+> * The names of the players and the size of the grid can be changed using the appropriate fields. By default they are "Játékos 1", "Játékos 2" and the size is 10.
+> * A label is displayed to indicate which player can move next, players cannot place a symbol on squares that are already occupied, only on empty squares.
+> * When one player has reached 5 adjacent symbols the game ends and a winner is declared.
+> * Press the "Új Játék" button to start a new game.
+
+#### Displayed content
+>Pages available to **Guest** visitors
+>* **Login page** - _you can login using the "gergo" username with "123" password_
+>
+>Pages available to **Logged in** users
+>* **GameBoard** - _display the tic-tac-toe gameboard where you can set the names of two players and the size of the board_  
+
+<!-- CONFIGURATION -->
+# Run the App
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the "tic-tac-toe" project directory, you can run:
 
 ### `npm start`
 
@@ -14,57 +36,29 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+The Application is also deployed to Firestore, available on the following public link:
+https://hmei-tictactoe-app.web.app/
 
-### `npm run build` fails to minify
+Login details:
+Username (Felhasználónév): gergo
+Password (Jelszó): 123
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- CONTACT -->
+## Contact
+
+>Gergely Almasi 
+>
+>[![LinkedIn][linkedin-shield]][linkedin-url] [![twitter][twitter-shield]][twitter-url] 
+>
+>_Project Link: [https://github.com/Skill4fun/Tic-tac-toe](https://github.com/Skill4fun/Tic-tac-toe)_  
+>
+>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=logo=linkedin&colorB=0092cc
+[linkedin-url]: https://linkedin.com/in/gergo-almasi
+[product-screenshot]: images/screenshot.png
+[twitter-shield]: https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2F
+[twitter-url]: https://twitter.com/Skill4fun_
