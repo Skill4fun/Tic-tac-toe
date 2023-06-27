@@ -15,7 +15,7 @@ Pages available to **Guest** visitors
 Pages available to **Logged in** users
 * **GameBoard** - _display the tic-tac-toe gameboard where you can set the names of two players, the size of the board and also start new game_  
 
-
+> **Gameplay and Rules**
 > * The game starts by generating a 10x10 square grid, initially empty.
 > * The names of the players and the size of the grid can be changed using the appropriate fields. By default they are "Játékos 1", "Játékos 2" and the size is 10.
 > * A label is displayed to indicate which player can move next, players cannot place a symbol on squares that are already occupied, only on empty squares.
@@ -25,10 +25,7 @@ Pages available to **Logged in** users
 <!-- CONFIGURATION -->
 ## Run the App
 
-#### Available Scripts
-
-In the "tic-tac-toe" project directory, you can run:
-
+#### In the "tic-tac-toe" project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
