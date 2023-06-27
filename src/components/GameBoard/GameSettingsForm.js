@@ -112,7 +112,7 @@ const GameSettingsForm = function () {
 
   ////------------------ handleOnSubmit ------------------
   // Events at the time the form is submitted. Obviously, without a backend, the code below 
-  // is only suitable for settings be temporarily stored in the browser, without data transmission.
+  // is only suitable for settings to be temporarily stored in the browser, without data transmission.
   function handleOnSubmit(event) {
     event.preventDefault();
 

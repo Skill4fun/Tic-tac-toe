@@ -1,7 +1,7 @@
 ////------------------ GameSettingsContextProvider ------------------
 // A custom context provider to make game settings available to other components,
 // even at different nesting levels. Game settings have initial default values here,
-// (player names, board size) but can also be modified by user on "GameSettingsForm". 
+// (player names, board size) but can also be modified by user at "GameSettingsForm". 
 
 import React, { createContext, useContext, useState } from 'react';
 
