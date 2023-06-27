@@ -1,5 +1,6 @@
 <!-- ABOUT THE PROJECT -->
-# About The Project
+# Tic-Tac-Toe Game Application
+### About the project
 
 It's a simple Tic-Tac-Toe game app where two players can play against each other.
 
@@ -19,7 +20,7 @@ Pages available to **Logged in** users
 > * The game starts by generating a 10x10 square grid, initially empty.
 > * The names of the players and the size of the grid can be changed using the appropriate fields. By default they are "Játékos 1", "Játékos 2" and the size is 10.
 > * A label is displayed to indicate which player can move next, players cannot place a symbol on squares that are already occupied, only on empty squares.
-> * When one player has reached 5 adjacent symbols the game ends and a winner is declared.
+> * When one player has reached 5 adjacent (horizontal, vertical, diagonal) symbols the game ends and a winner is declared.
 > * Press the "Új Játék" button to start a new game.
 
 <!-- CONFIGURATION -->
@@ -37,7 +38,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The Application is also deployed/hosted to Firestore, available on the following public link:\
 https://hmei-tictactoe-app.web.app/
 
-Login details:\
+**Login details:**\
 Username (Felhasználónév): `gergo` \
 Password (Jelszó): `123` 
 
