@@ -11,7 +11,7 @@ The App is built with **[React](https://reactjs.org/)** framework
 
 ## Displayed content
 Pages available to **Guest** visitors
-* **Login page** - _you can login using the "gergo" username with "123" password_
+* **Login page** - _you can login using the username `gergo` and password `123`_
 
 Pages available to **Logged in** users
 * **GameBoard** - _display the tic-tac-toe gameboard where you can set the names of two players, the size of the board and also start new game_  
@@ -31,7 +31,8 @@ Pages available to **Logged in** users
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+>Login using the username `gergo` and password `123`
+>Play the game! :)
 
 ## Deployment
 
