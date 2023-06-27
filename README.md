@@ -35,7 +35,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Deployment
 
-The Application is also deployed/hosted to Firestore, available on the following public link:\
+The Application is also deployed/hosted to Firestore, you can try it out at the following public link:\
 https://hmei-tictactoe-app.web.app/
 
 **Login details:**\
