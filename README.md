@@ -31,7 +31,7 @@ Pages available to **Logged in** users
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
->Login using the username `gergo` and password `123`
+>Login using the username `gergo` and password `123` \
 >Play the game! :)
 
 ## Deployment
