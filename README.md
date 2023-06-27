@@ -3,8 +3,8 @@
 
 It's a simple Tic-Tac-Toe game app where two players can play against each other.
 
-## The App is built with React framework
->**[React](https://reactjs.org/)**
+### Used technology
+The App is built with **[React](https://reactjs.org/)** framework
 >
 >Compared to JavaScript React provides better maintenance services  to keep the application fast and dynamic, it is easier to update the app or even expand with new features using reusable components and virtualDOM, which makes React superior to plain JavaScript for today's modern applications.
 
@@ -14,17 +14,17 @@ It's a simple Tic-Tac-Toe game app where two players can play against each other
 > * When one player has reached 5 adjacent symbols the game ends and a winner is declared.
 > * Press the "Új Játék" button to start a new game.
 
-#### Displayed content
+### Displayed content
 >Pages available to **Guest** visitors
 >* **Login page** - _you can login using the "gergo" username with "123" password_
 >
 >Pages available to **Logged in** users
->* **GameBoard** - _display the tic-tac-toe gameboard where you can set the names of two players and the size of the board_  
+>* **GameBoard** - _display the tic-tac-toe gameboard where you can set the names of two players, the size of the board and also start new game_  
 
 <!-- CONFIGURATION -->
-# Run the App
+### Run the App
 
-## Available Scripts
+#### Available Scripts
 
 In the "tic-tac-toe" project directory, you can run:
 
@@ -33,17 +33,15 @@ In the "tic-tac-toe" project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### Deployment
 
-The Application is also deployed to Firestore, available on the following public link:
+The Application is also deployed to Firestore, available on the following public link:\
 https://hmei-tictactoe-app.web.app/
 
-Login details:
-Username (Felhasználónév): gergo
-Password (Jelszó): 123
+Login details:\
+Username (Felhasználónév): `gergo` \
+Password (Jelszó): `123` \
 
 <!-- CONTACT -->
 ## Contact
