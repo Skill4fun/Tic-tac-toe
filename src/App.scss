@@ -1,0 +1,41 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+td {
+  text-align: center;
+}
+
+.menu-header {
+  margin: 2rem auto;
+}
+
+.menu-button {
+  margin: 15px 0px;
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #000021;
+  background: #1de9b6;
+  line-height: 1.15;
+  font-size: 16px;
+}
+
+.menu-button:hover {
+  transition: all .1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+
+.menu-button:active {
+  box-shadow: 0 0 0 0 #fff, 0 0 0 8px #1de9b6;
+  border-radius: 10px;
+  color: #0000219c;
+}

@@ -1,0 +1,74 @@
+.tictactoe-board {
+  border-collapse: collapse;
+  margin: 20px auto 50px;
+}
+
+.tictactoe-cell {
+  border: 2px solid whitesmoke;
+  color: rgb(197, 20, 20);
+  font-weight: bold;
+  font-size: large;
+  width: 40px;
+  height: 40px;
+  user-select: none;
+}
+
+.tictactoe-cell.winner-x {
+  background-color: rgba(30, 190, 118, 0.3);
+}
+
+.tictactoe-cell.winner-o {
+  background-color: rgba(255, 0, 25, 0.10)
+}
+
+.tictactoe-cell.empty {
+  cursor: pointer;
+}
+
+.tictactoe-cell.empty:hover {
+  background-color: rgb(133, 240, 231);
+}
+
+.gameboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.player-x-rotate {
+  transform: rotate(45deg);
+  width: 100px;
+  margin: 0 auto;
+}
+
+.player-x {
+  margin: 0 auto;
+  background: green;
+  height: 100px;
+  position: relative;
+  width: 20px;
+}
+
+.player-x:after {
+  background: green;
+  content: "";
+  height: 20px;
+  left: -40px;
+  position: absolute;
+  top: 40px;
+  width: 100px;
+}
+
+.player-y {
+  width: 100px;
+  height: 100px;
+  background-color: whitesmoke;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 1rem solid red;
+}
+
+.game-size {
+  width: 250px;
+  margin: 0 auto;
+}
