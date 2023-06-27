@@ -20,7 +20,7 @@ export default function GameBoard() {
 
 
   ////------------------ checkWinnerInRow ------------------
-  // checks the number of symbols in the given array (row), if 5 symbols are found, it checks 
+  // Checks the number of symbols in the given array (row), if 5 symbols are found, it checks 
   // the symbol("X" or "O") and returns the name of the winning player, else returns "null"
   function checkWinnerInRow(row) {
     let symbolCount = 0;
@@ -39,7 +39,7 @@ export default function GameBoard() {
   }
 
   ////------------------ checkWinnerInAllRows ------------------
-  // checks if there is a winner in any of the rows given matrix array and returns 
+  // Checks if there is a winner in any of the rows given matrix array and returns 
   // winners name, else returns "null"
   function checkWinnerInAllRows(matrix) {
     for (let row of matrix) {
@@ -52,16 +52,17 @@ export default function GameBoard() {
   }
 
   ////------------------ getWinner ------------------
-  // 
+  // Checks and determines the winner of the game, if any. Collects the possible winning field 
+  // combinations and checks if there is a match. (every time a cell is clicked)
   function getWinner(board) {
     // Transpose the board (matrix) array to make it easier to check the winner 
     // in both horizontal and vertical dimensions later with "checkWinnerInAllRows"
     const boardTransposed = transpose(board);
 
-    // An array to collect all possible fields, arranged in rows one below the other, 
+    // An array to collects all possible fields, arranged in rows one below the other, 
     // where we will later check if 5 identical symbols have been collected in any row
     let allPossibleWinningFields = [
-      ...board,              //horizontal array 
+      ...board,              //original board array 
       ...boardTransposed     //vertically transposed board array 
     ]
 
@@ -125,7 +126,7 @@ export default function GameBoard() {
   }
 
   ////------------------ useEffect ------------------
-  // Load initial board and winner satates, update them if something changes by user
+  // Load initial board and winner states, update them if something changes by user
   useEffect(() => {
     setBoard(generateInitialBoardState(cols, rows));
     setWinner(null);
