@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import LoggedInUserContextProvider from './helper/LoggedInUserContextProvider';
 import GameSettingsContextProvider from './helper/GameSettingsContextProvider';
 
@@ -18,3 +19,5 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>,
 );
+
+serviceWorkerRegistration.register();
