@@ -20,3 +20,15 @@ export const generateInitialBoardState = (cols, rows) => {
 export const transpose = (matrixArray) => {
   return matrixArray[0].map((col, i) => matrixArray.map(row => row[i]));
 }
+
+////------------------ getCellClassName ------------------
+// Generate custom conditional className-s for cells 
+export const getCellClassName = (cellValue, winnersName, playerNames) => {
+  if (cellValue === null && winnersName === null) return "empty";
+  if (cellValue === "X" && winnersName === null) return "clicked-x";
+  if (cellValue === "O" && winnersName === null) return "clicked-o";
+  if (cellValue === "X" && winnersName === playerNames.playerOne) return "clicked-x";
+  if (cellValue === "O" && winnersName === playerNames.playerTwo) return "clicked-o";
+  if (winnersName === playerNames.playerOne) return "winner-x";
+  if (winnersName === playerNames.playerTwo) return "winner-o";
+}

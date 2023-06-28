@@ -3,7 +3,7 @@
 
 import React, { useState, useEffect } from 'react';
 import './GameBoard.scss';
-import { generateInitialBoardState, transpose } from './gameboard-utils'
+import { generateInitialBoardState, transpose, getCellClassName } from './gameboard-utils'
 import { useLoggedInUserContext } from '../../helper/LoggedInUserContextProvider';
 import { useGameSettingsContext } from '../../helper/GameSettingsContextProvider';
 import Alert from '../Alert';
@@ -39,7 +39,7 @@ export default function GameBoard() {
   }
 
   ////------------------ checkWinnerInAllRows ------------------
-  // Checks if there is a winner in any of the rows given matrix array and returns 
+  // Checks if there is a winner in any of the rows of the given matrix array and returns 
   // winners name, else returns "null"
   function checkWinnerInAllRows(matrix) {
     for (let row of matrix) {
@@ -52,27 +52,27 @@ export default function GameBoard() {
   }
 
   ////------------------ getWinner ------------------
-  // Checks and determines the winner of the game, if any. Collects the possible winning field 
+  // Checks and determines the winner of the game, if any. Collects the possible winning "field" 
   // combinations and checks if there is a match. (every time a cell is clicked)
   function getWinner(board) {
     // Transpose the board (matrix) array to make it easier to check the winner 
-    // in both horizontal and vertical dimensions later with "checkWinnerInAllRows"
+    // in both horizontal (row) and vertical (column) dimensions later with "checkWinnerInAllRows"
     const boardTransposed = transpose(board);
 
-    // An array to collects all possible fields, arranged in rows one below the other, 
-    // where we will later check if 5 identical symbols have been collected in any row
-    let allPossibleWinningFields = [
-      ...board,              //original board array 
-      ...boardTransposed     //vertically transposed board array 
+    // An array to collect all possible winning fields-combinations, arranged in rows one below the other,
+    // where we will later check if 5 identical symbols (X or O value) can be found in any row
+    let allPossibleWinningCombinations = [
+      ...board,                           // original board array 
+      ...boardTransposed                  // vertically transposed board array 
     ]
 
     // Create a reversed/mirrored array from board to make it simplier to check the diagonals 
-    // in both ways (main and cross) with "getDiagonalItems" function 
+    // in both ways (main and cross) with "getDiagonals" function 
     let boardReverse = board.map(row => [...row].reverse());
 
-    // Determine the indexes of possible diagonal positioned items (in the matrix) for a 
-    // given x/y-index of the board (>> one right one down) and return their values in an array "diag"
-    function getDiagonalItems(board, x, y) {
+    // Determine the indexes of possible diagonal positioned elements (in the matrix) for a
+    // given x/y-coordinate of the board (>> it moves one right one down) and return their values in an array "diag"
+    function getDiagonals(board, x, y) {
       let diag = [];
       while (Array.isArray(board[x]) && typeof board[x][y] !== 'undefined') {
         diag.push(board[x][y]);           // push value into diag array
@@ -86,23 +86,23 @@ export default function GameBoard() {
 
     for (let i = 0; i < maxLength; i++) {
       // get all main diagonals in first column of the board matrix
-      allPossibleWinningFields.push(getDiagonalItems(board, 0, i));
+      allPossibleWinningCombinations.push(getDiagonals(board, 0, i));
 
       // get al cross-diagonals in first column of the board matrix
-      allPossibleWinningFields.push(getDiagonalItems(boardReverse, 0, i));
+      allPossibleWinningCombinations.push(getDiagonals(boardReverse, 0, i));
 
       // get all main diagonals in first row of the board matrix
-      allPossibleWinningFields.push(getDiagonalItems(board, i, 0));
+      allPossibleWinningCombinations.push(getDiagonals(board, i, 0));
 
       // get all main cross-diagonals in first row of the board matrix
-      allPossibleWinningFields.push(getDiagonalItems(boardReverse, i, 0));
+      allPossibleWinningCombinations.push(getDiagonals(boardReverse, i, 0));
     }
 
-    // Filter min 5 length field arrays in allPossibleWinningFields 
-    allPossibleWinningFields = allPossibleWinningFields.filter((fieldsArr) => fieldsArr.length >= 5);
+    // Filter min 5 length field arrays in allPossibleWinningCombinations 
+    allPossibleWinningCombinations = allPossibleWinningCombinations.filter((fieldsArr) => fieldsArr.length >= 5);
 
-    // Check whether we have 5 indentical symbols in any rows of "allPossibleWinningFields" matrix array
-    return checkWinnerInAllRows(allPossibleWinningFields);
+    // Check whether we have 5 indentical symbols in any rows of "allPossibleWinningCombinations" matrix array
+    return checkWinnerInAllRows(allPossibleWinningCombinations);
   }
 
   ////------------------ handleCellClick ------------------
@@ -131,14 +131,6 @@ export default function GameBoard() {
     setBoard(generateInitialBoardState(cols, rows));
     setWinner(null);
   }, [isResetGameClicked, gameBoardSize, cols, rows]);
-
-  ////------------------ getCellClassName ------------------
-  // Generate custom conditional className-s for cells 
-  function getCellClassName(cellValue, winnersName) {
-    if (cellValue === null && winnersName === null) return "empty";
-    if (winnersName === playerNames.playerOne) return "winner-x";
-    if (winnersName === playerNames.playerTwo) return "winner-o";
-  }
 
 
   return (
@@ -174,7 +166,7 @@ export default function GameBoard() {
                     {row.map((col, colIdx) => (
                       <td
                         key={`${col + colIdx}`}
-                        className={"tictactoe-cell " + getCellClassName(row[colIdx], winner)}
+                        className={"tictactoe-cell " + getCellClassName(row[colIdx], winner, playerNames)}
                         onClick={handleCellClick}
                         data-row={rowIdx}
                         data-col={colIdx}

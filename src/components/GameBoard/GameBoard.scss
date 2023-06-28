@@ -9,12 +9,19 @@ td {
 
 .tictactoe-cell {
   border: 2px solid whitesmoke;
-  color: rgb(197, 20, 20);
   font-weight: bold;
   font-size: large;
   width: 40px;
   height: 40px;
   user-select: none;
+}
+
+.tictactoe-cell.clicked-x {
+  color: green
+}
+
+.tictactoe-cell.clicked-o {
+  color: red;
 }
 
 .tictactoe-cell.winner-x {
