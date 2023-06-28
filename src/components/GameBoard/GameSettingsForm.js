@@ -180,7 +180,7 @@ const GameSettingsForm = function () {
               />
             </div>
             <button
-              className="menu-button"
+              className="navbar-button"
               onClick={() => { setIsResetGameClicked((prev) => (!prev)); }}
             >
               Új Játék

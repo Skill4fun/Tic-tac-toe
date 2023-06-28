@@ -171,7 +171,7 @@ const LoginForm = function () {
                 value={formData.password}
               />
             </div>
-            <button className="menu-button">Bejelentkezés</button>
+            <button className="navbar-button">Bejelentkezés</button>
           </form>
 
           {(!!alert || formSent) &&

@@ -75,9 +75,9 @@ export default function GameBoard() {
     function getDiagonalItems(board, x, y) {
       let diag = [];
       while (Array.isArray(board[x]) && typeof board[x][y] !== 'undefined') {
-        diag.push(board[x][y]); //push value into diag array
-        x += 1;                 //move right
-        y += 1;                 //move down
+        diag.push(board[x][y]);           // push value into diag array
+        x += 1;                           // move 1 right
+        y += 1;                           // move 1 down
       }
       return diag;
     }
