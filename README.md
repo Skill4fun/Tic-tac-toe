@@ -14,7 +14,7 @@ The App is built with **[React](https://reactjs.org/)** framework
 >* [Bootstrap](https://getbootstrap.com/docs/5.0/customize/sass/)
 >* [Firebase](https://firebase.google.com/) - for hosting
 >
->The App is [PWA](https://create-react-app.dev/docs/making-a-progressive-web-app/), you can install it to your mobile homescreen and use it offline as well 
+>The App is [PWA](https://create-react-app.dev/docs/making-a-progressive-web-app/), you can install it on your mobile home screen and use it offline. 
 
 ## Displayed content
 Pages available to **Guest** visitors
