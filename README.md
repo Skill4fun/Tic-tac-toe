@@ -8,6 +8,13 @@ It's a simple Tic-Tac-Toe game app where two players can play against each other
 The App is built with **[React](https://reactjs.org/)** framework
 >
 >Compared to JavaScript React provides better maintenance services  to keep the application fast and dynamic, it is easier to update the app or even expand with new features using reusable components and virtualDOM, which makes - in my opinion - React superior to plain JavaScript for today's modern applications.
+>
+>**Technologies used:**
+>* [React](https://reactjs.org/)
+>* [Bootstrap](https://getbootstrap.com/docs/5.0/customize/sass/)
+>* [Firebase](https://firebase.google.com/) - for hosting
+>
+>The App is [PWA](https://create-react-app.dev/docs/making-a-progressive-web-app/), you can install it to your mobile homescreen and use it offline as well 
 
 ## Displayed content
 Pages available to **Guest** visitors
