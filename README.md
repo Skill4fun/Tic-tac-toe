@@ -29,14 +29,14 @@ Pages available to **Logged in** users
 #### In the "tic-tac-toe" project directory, you can run:
 ### `npm start`
 
-Runs the app in the development mode.\
+It runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 >Login using the username `gergo` and password `123` \
 >Play the game! :)
 
 ## Deployment
 
-The Application is also deployed/hosted to Firestore, you can try it out at the following public link:\
+The Application is also deployed/hosted to **[Firebase](https://firebase.google.com/)**, you can try it out at the following public link:\
 https://hmei-tictactoe-app.web.app/
 
 **Login details:**\
