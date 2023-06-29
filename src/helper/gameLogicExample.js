@@ -1,3 +1,6 @@
+////------------------ gameLogixEcample ------------------
+// A few simple examples to illustrate the game logic. The code below is not used anywhere in the App.
+
 let board = [
   [11, 12, 13, 14, 15],
   [21, 22, 23, 24, 25],
@@ -8,16 +11,15 @@ let board = [
 
 let boardReverse = board.map(row => [...row].reverse());
 
-export function getDiagonal(board, x, y, dx, dy) {
+export function getDiagonal(board, x, y) {
   let diag = [];
   while (Array.isArray(board[x]) && typeof board[x][y] !== 'undefined') {
     diag.push(board[x][y]);
-    x += dx;
-    y += dy;
+    x += 1;
+    y += 1;
   }
   return diag;
 }
-
 
 
 

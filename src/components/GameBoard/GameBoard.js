@@ -94,11 +94,11 @@ export default function GameBoard() {
       // get all main diagonals in first row of the board matrix
       allPossibleWinningCombinations.push(getDiagonals(board, i, 0));
 
-      // get all main cross-diagonals in first row of the board matrix
+      // get all cross-diagonals in first row of the board matrix
       allPossibleWinningCombinations.push(getDiagonals(boardReverse, i, 0));
     }
 
-    // Filter min 5 length field arrays in allPossibleWinningCombinations 
+    // Filter min 5 length field-combination arrays in allPossibleWinningCombinations 
     allPossibleWinningCombinations = allPossibleWinningCombinations.filter((fieldsArr) => fieldsArr.length >= 5);
 
     // Check whether we have 5 indentical symbols in any rows of "allPossibleWinningCombinations" matrix array
