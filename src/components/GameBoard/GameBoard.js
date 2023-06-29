@@ -85,16 +85,16 @@ export default function GameBoard() {
     let maxLength = Math.max(cols, rows);
 
     for (let i = 0; i < maxLength; i++) {
-      // get all main diagonals in first column of the board matrix
+      // get all main diagonals in first row of the board matrix
       allPossibleWinningCombinations.push(getDiagonals(board, 0, i));
 
-      // get al cross-diagonals in first column of the board matrix
+      // get al cross-diagonals in first row of the board matrix
       allPossibleWinningCombinations.push(getDiagonals(boardReverse, 0, i));
 
-      // get all main diagonals in first row of the board matrix
+      // get all main diagonals in first column of the board matrix
       allPossibleWinningCombinations.push(getDiagonals(board, i, 0));
 
-      // get all cross-diagonals in first row of the board matrix
+      // get all cross-diagonals in first column of the board matrix
       allPossibleWinningCombinations.push(getDiagonals(boardReverse, i, 0));
     }
 
